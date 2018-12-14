@@ -25,7 +25,7 @@ class Main(discord.Client):
         if (message.channel.id == self.male):
 
             # log
-            print(message.author.name + 'add_male')
+            print(message.author.name + ' add_male')
 
             male_role = discord.utils.find(lambda role: role.name == '男性', message.guild.roles)
             await message.author.add_roles(male_role)
@@ -33,7 +33,7 @@ class Main(discord.Client):
         #  female prof
         if (message.channel.id == self.female):
             #log
-            print(message.author.name + 'add_female')
+            print(message.author.name + ' add_female')
 
             female_role = discord.utils.find(lambda role: role.name == '女性', message.guild.roles)
             await message.author.add_roles(female_role)
@@ -42,7 +42,7 @@ class Main(discord.Client):
         if (message.channel.id == self.LGBTQ):
 
             # log
-            print(message.author.name + 'add_lgbtq')
+            print(message.author.name + ' add_lgbtq')
 
             lgbtq_role = discord.utils.find(lambda role: role.name == 'LGBTQ', message.guild.roles)
             await message.author.add_roles(lgbtq_role)
